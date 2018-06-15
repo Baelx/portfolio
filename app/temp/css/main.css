@@ -438,7 +438,7 @@ nav {
   .top-left h1 {
     color: black;
     text-align: center;
-    margin-top: 220px; }
+    margin-top: 233px; }
 
 .top-right {
   transform: rotate(45deg);
@@ -450,7 +450,8 @@ nav {
   .top-right h2 {
     color: black;
     text-align: center;
-    margin-top: 20px; }
+    margin-top: 115px;
+    font-size: 1em; }
 
 .bottom-left {
   transform: rotate(-45deg);
@@ -462,9 +463,10 @@ nav {
   .bottom-left h2 {
     color: black;
     text-align: center;
-    margin-top: 50px;
-    margin-left: 90px;
-    transform: rotate(90deg); }
+    margin-top: 46px;
+    margin-left: 108px;
+    transform: rotate(90deg);
+    font-size: 1em; }
 
 .bottom-right {
   transform: rotate(45deg);
@@ -476,9 +478,10 @@ nav {
   .bottom-right h2 {
     color: black;
     text-align: center;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    transform: rotate(-90deg); }
+    margin-top: 64px;
+    margin-right: 101px;
+    transform: rotate(-90deg);
+    font-size: 1em; }
 
 .test2 {
   width: 71.42857%; }
