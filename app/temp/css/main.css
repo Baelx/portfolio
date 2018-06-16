@@ -433,8 +433,8 @@ nav {
   transform: rotate(-45deg);
   width: 350px;
   height: 350px;
-  top: -175px;
-  left: -175px; }
+  top: -180px;
+  left: -180px; }
   .top-left h1 {
     color: black;
     text-align: center;
@@ -442,11 +442,15 @@ nav {
 
 .top-right {
   transform: rotate(45deg);
-  width: 150px;
-  height: 150px;
-  top: -75px;
-  right: -75px;
+  width: 160px;
+  height: 160px;
+  top: -90px;
+  right: -90px;
   box-shadow: 2px 3px 3px black; }
+  .top-right:hover {
+    animation-name: top-right-wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; }
   .top-right h2 {
     color: black;
     text-align: center;
@@ -455,11 +459,15 @@ nav {
 
 .bottom-left {
   transform: rotate(-45deg);
-  width: 150px;
-  height: 150px;
-  bottom: -75px;
-  left: -75px;
+  width: 160px;
+  height: 160px;
+  bottom: -90px;
+  left: -90px;
   box-shadow: 2px 3px 3px black; }
+  .bottom-left:hover {
+    animation-name: bottom-left-wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; }
   .bottom-left h2 {
     color: black;
     text-align: center;
@@ -470,11 +478,15 @@ nav {
 
 .bottom-right {
   transform: rotate(45deg);
-  width: 150px;
-  height: 150px;
-  bottom: -75px;
-  right: -75px;
+  width: 160px;
+  height: 160px;
+  bottom: -90px;
+  right: -90px;
   box-shadow: -2px 3px 3px black; }
+  .bottom-right:hover {
+    animation-name: bottom-right-wiggle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; }
   .bottom-right h2 {
     color: black;
     text-align: center;
@@ -482,6 +494,39 @@ nav {
     margin-right: 101px;
     transform: rotate(-90deg);
     font-size: 1em; }
+
+@keyframes top-right-wiggle {
+  0% {
+    top: -90px;
+    right: -90px; }
+  50% {
+    top: -85px;
+    right: -85px; }
+  100% {
+    top: -90px;
+    right: -90px; } }
+
+@keyframes bottom-left-wiggle {
+  0% {
+    bottom: -90px;
+    left: -90px; }
+  50% {
+    bottom: -85px;
+    left: -85px; }
+  100% {
+    bottom: -90px;
+    left: -90px; } }
+
+@keyframes bottom-right-wiggle {
+  0% {
+    bottom: -90px;
+    right: -90px; }
+  50% {
+    bottom: -85px;
+    right: -85px; }
+  100% {
+    bottom: -90px;
+    right: -90px; } }
 
 .test2 {
   width: 71.42857%; }
