@@ -1,7 +1,7 @@
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: #bbb;
+  background: rgba(208, 208, 208, 0.42);
 }
 
 .top-left {
@@ -33,7 +33,7 @@ nav {
 
   &:hover {
     animation-name: top-right-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite;
   }
 
@@ -58,7 +58,7 @@ nav {
 
   &:hover {
     animation-name: bottom-left-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite;
   }
 
@@ -86,7 +86,7 @@ nav {
 
   &:hover {
     animation-name: bottom-right-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite;
   }
 

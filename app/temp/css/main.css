@@ -426,7 +426,7 @@ template {
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: #bbb; }
+  background: rgba(208, 208, 208, 0.42); }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
@@ -449,7 +449,7 @@ nav {
   box-shadow: 2px 3px 3px black; }
   .top-right:hover {
     animation-name: top-right-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .top-right h2 {
     color: black;
@@ -466,7 +466,7 @@ nav {
   box-shadow: 2px 3px 3px black; }
   .bottom-left:hover {
     animation-name: bottom-left-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-left h2 {
     color: black;
@@ -485,7 +485,7 @@ nav {
   box-shadow: -2px 3px 3px black; }
   .bottom-right:hover {
     animation-name: bottom-right-wiggle;
-    animation-duration: 1.5s;
+    animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-right h2 {
     color: black;
@@ -528,21 +528,16 @@ nav {
     bottom: -90px;
     right: -90px; } }
 
-.test2 {
-  width: 71.42857%; }
-
-.another-style {
-  float: left; }
-
-h2 {
-  color: green; }
-
-p {
-  color: red; }
-
 .bio {
   width: 50%;
+  background-color: rgba(208, 208, 208, 0.42);
   font-family: 'Poor Story', cursive;
   font-size: 1.5rem;
   transform: translateX(50%);
-  margin-top: 100px; }
+  margin-top: 80px;
+  border: 2px solid gray;
+  padding: 30px;
+  border-radius: 25px; }
+
+body {
+  background-image: url("../../assets/imgs/wrinkled.jpg"); }
