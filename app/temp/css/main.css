@@ -426,7 +426,8 @@ template {
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: white; }
+  background: white;
+  z-index: 2; }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
@@ -438,7 +439,8 @@ nav {
   .top-left h1 {
     color: black;
     text-align: center;
-    margin-top: 233px; }
+    font-size: 1.75em;
+    margin-top: 240px; }
 
 .top-right {
   transform: rotate(45deg);
@@ -451,11 +453,17 @@ nav {
     animation-name: top-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
-  .top-right h2 {
+  .top-right a {
+    margin-top: 100px;
+    margin-left: -2px;
     color: black;
+    font-size: 0.65em;
+    display: inline-block;
     text-align: center;
-    margin-top: 115px;
-    font-size: 1em; }
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    line-height: 2; }
 
 .bottom-left {
   transform: rotate(-45deg);
@@ -465,16 +473,21 @@ nav {
   left: -90px;
   box-shadow: 2px 3px 3px black; }
   .bottom-left:hover {
-    animation-name: top-right-wiggle;
+    animation-name: bottom-left-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
-  .bottom-left h2 {
-    color: black;
-    text-align: center;
-    margin-top: 46px;
-    margin-left: 108px;
+  .bottom-left a {
+    margin-top: 47px;
+    margin-left: 62px;
     transform: rotate(90deg);
-    font-size: 1em; }
+    color: black;
+    font-size: 0.65em;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    line-height: 2; }
 
 .bottom-right {
   transform: rotate(45deg);
@@ -484,16 +497,21 @@ nav {
   right: -90px;
   box-shadow: -2px 3px 3px black; }
   .bottom-right:hover {
-    animation-name: top-right-wiggle;
+    animation-name: bottom-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
-  .bottom-right h2 {
-    color: black;
-    text-align: center;
+  .bottom-right a {
     margin-top: 64px;
     margin-right: 101px;
     transform: rotate(-90deg);
-    font-size: 1em; }
+    color: black;
+    font-size: 0.65em;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    line-height: 2; }
 
 @keyframes top-right-wiggle {
   0% {
@@ -528,16 +546,23 @@ nav {
     bottom: -90px;
     right: -90px; } }
 
-.bio {
+body {
+  background-image: url("../../assets/imgs/wrinkled.jpg"); }
+
+.bio, .blog {
   width: 50%;
-  background-color: rgba(208, 208, 208, 0.42);
   font-family: 'Poor Story', cursive;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   transform: translateX(50%);
   margin-top: 80px;
-  border: 2px solid gray;
   padding: 30px;
   border-radius: 25px; }
 
-body {
-  background-image: url("../../assets/imgs/wrinkled.jpg"); }
+.blog {
+  text-align: center; }
+
+.signature {
+  float: right; }
+
+.ps {
+  clear: both; }

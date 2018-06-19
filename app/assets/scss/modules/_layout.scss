@@ -1,15 +1,27 @@
-.bio {
+body {
+  background-image: url("../../assets/imgs/wrinkled.jpg");
+}
+
+.bio, .blog {
   width: 50%;
-  background-color: rgba(208, 208, 208, 0.42);
+  // background-color: rgba(208, 208, 208, 0.42);
   font-family: 'Poor Story', cursive;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   transform: translateX(50%);
   margin-top: 80px;
-  border: 2px solid gray;
+  // border: 2px solid gray;
   padding: 30px;
   border-radius: 25px;
 }
 
-body {
-  background-image: url("../../assets/imgs/wrinkled.jpg");
+.blog {
+text-align: center;
+}
+
+.signature {
+float:right;
+}
+
+.ps {
+clear: both;
 }
