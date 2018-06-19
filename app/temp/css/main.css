@@ -426,7 +426,7 @@ template {
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: rgba(208, 208, 208, 0.42); }
+  background: white; }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
@@ -465,7 +465,7 @@ nav {
   left: -90px;
   box-shadow: 2px 3px 3px black; }
   .bottom-left:hover {
-    animation-name: bottom-left-wiggle;
+    animation-name: top-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-left h2 {
@@ -484,7 +484,7 @@ nav {
   right: -90px;
   box-shadow: -2px 3px 3px black; }
   .bottom-right:hover {
-    animation-name: bottom-right-wiggle;
+    animation-name: top-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-right h2 {

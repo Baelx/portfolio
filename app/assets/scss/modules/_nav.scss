@@ -1,7 +1,13 @@
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: rgba(208, 208, 208, 0.42);
+  background: white;
+}
+
+@mixin wiggle-animation {
+  animation-name: top-right-wiggle;
+  animation-duration: 1.25s;
+  animation-iteration-count: infinite;
 }
 
 .top-left {
@@ -32,9 +38,7 @@ nav {
   box-shadow: 2px 3px 3px black;
 
   &:hover {
-    animation-name: top-right-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite;
+    @include wiggle-animation;
   }
 
   h2 {
@@ -57,9 +61,7 @@ nav {
   box-shadow: 2px 3px 3px black;
 
   &:hover {
-    animation-name: bottom-left-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite;
+    @include wiggle-animation;
   }
 
   h2 {
@@ -85,9 +87,7 @@ nav {
   box-shadow: -2px 3px 3px black;
 
   &:hover {
-    animation-name: bottom-right-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite;
+    @include wiggle-animation;
   }
 
   h2 {
@@ -110,7 +110,7 @@ nav {
   50% {
     top: -85px;
     right: -85px;
-}
+  }
   100% {
     top: -90px;
     right: -90px;
@@ -124,7 +124,7 @@ nav {
   50% {
     bottom: -85px;
     left: -85px;
-}
+  }
   100% {
     bottom: -90px;
     left: -90px;
@@ -139,7 +139,7 @@ nav {
   50% {
     bottom: -85px;
     right: -85px;
-}
+  }
   100% {
     bottom: -90px;
     right: -90px;
