@@ -104,9 +104,12 @@ a {
   }
 
 a {
-    margin-top: 64px;
+    margin-top: 48px;
     margin-right: 101px;
     transform: rotate(-90deg);
+    position: relative;
+    top: -16%;
+    right: 39%;
 
 @include nav-link-style;
 

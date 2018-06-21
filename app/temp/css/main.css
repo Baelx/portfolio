@@ -501,9 +501,12 @@ nav {
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-right a {
-    margin-top: 64px;
+    margin-top: 48px;
     margin-right: 101px;
     transform: rotate(-90deg);
+    position: relative;
+    top: -16%;
+    right: 39%;
     color: black;
     font-size: 0.65em;
     display: inline-block;
@@ -550,13 +553,11 @@ body {
   background-image: url("../../assets/imgs/wrinkled.jpg"); }
 
 .bio, .blog {
-  width: 50%;
+  width: 60%;
   font-family: 'Poor Story', cursive;
-  font-size: 1.75rem;
-  transform: translateX(50%);
+  font-size: 1.6rem;
   margin-top: 80px;
-  padding: 30px;
-  border-radius: 25px; }
+  margin: 80px auto; }
 
 .blog {
   text-align: center; }
@@ -566,3 +567,10 @@ body {
 
 .ps {
   clear: both; }
+
+.social-links a {
+  margin-right: 20px; }
+
+.social-links img {
+  height: 64px;
+  weight: 64px; }
