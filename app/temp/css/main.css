@@ -423,17 +423,26 @@ template {
 * {
   box-sizing: border-box; }
 
+body {
+  background-image: url("../../assets/imgs/pattern.png"); }
+
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
   background: white;
-  z-index: 2; }
+  z-index: 2;
+  color: black; }
+  nav a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: inline-block; }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
   transform: rotate(-45deg);
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   top: -180px;
   left: -180px; }
   .top-left h1 {
@@ -456,13 +465,8 @@ nav {
   .top-right a {
     margin-top: 100px;
     margin-left: -2px;
-    color: black;
     font-size: 0.65em;
-    display: inline-block;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
     line-height: 2; }
 
 .bottom-left {
@@ -480,13 +484,8 @@ nav {
     margin-top: 47px;
     margin-left: 62px;
     transform: rotate(90deg);
-    color: black;
     font-size: 0.65em;
-    display: inline-block;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
     line-height: 2; }
 
 .bottom-right {
@@ -507,13 +506,8 @@ nav {
     position: relative;
     top: -16%;
     right: 39%;
-    color: black;
     font-size: 0.65em;
-    display: inline-block;
     text-align: center;
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
     line-height: 2; }
 
 @keyframes top-right-wiggle {
@@ -549,15 +543,25 @@ nav {
     bottom: -90px;
     right: -90px; } }
 
-body {
-  background-image: url("../../assets/imgs/wrinkled.jpg"); }
+main * {
+  animation: fadein 1s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .bio, .blog {
-  width: 60%;
+  width: 75%;
   font-family: 'Poor Story', cursive;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 80px;
-  margin: 80px auto; }
+  margin: 80px auto;
+  background-color: #00000080;
+  color: white;
+  padding: 30px;
+  border-radius: 25px; }
 
 .blog {
   text-align: center; }
@@ -570,6 +574,8 @@ body {
 
 .social-links a {
   margin-right: 20px; }
+  .social-links a:nth-child(2) img {
+    filter: invert(95%); }
 
 .social-links img {
   height: 64px;

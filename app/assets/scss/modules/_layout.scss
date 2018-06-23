@@ -1,13 +1,26 @@
-body {
-  background-image: url("../../assets/imgs/wrinkled.jpg");
+
+main * {
+            animation: fadein 1s;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
 .bio, .blog {
-  width: 60%;
+  width: 75%;
   font-family: 'Poor Story', cursive;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-top: 80px;
   margin: 80px auto;
+  background-color: #00000080;
+  color: white;
+  padding: 30px;
+  border-radius: 25px;
 }
 
 .blog {
@@ -26,10 +39,20 @@ body {
 
   a {
     margin-right: 20px;
+
+
+    &:nth-child(2) {
+
+      img {
+        filter: invert(95%);
+      }
+    }
   }
 
   img {
     height: 64px;
     weight: 64px;
+
   }
+
 }
