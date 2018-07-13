@@ -8,6 +8,22 @@ main * {
   to   { opacity: 1; }
 }
 
+.wrapper {
+  display: flex;
+
+  .site-wrap {
+
+    margin: 20px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+
+
+}
+
 
 
 
@@ -23,14 +39,6 @@ main * {
   border-radius: 25px;
 }
 
-.portfolio {
-  display: flex;
-  justify-content: center;
-
-  & img {
-    width: 90%;
-  }
-}
 
 .blog {
   text-align: center;

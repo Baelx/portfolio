@@ -552,6 +552,13 @@ main * {
   to {
     opacity: 1; } }
 
+.wrapper {
+  display: flex; }
+  .wrapper .site-wrap {
+    margin: 20px; }
+    .wrapper .site-wrap img {
+      max-width: 100%; }
+
 .bio, .blog, .portfolio {
   width: 75%;
   font-family: 'Poor Story', cursive;
@@ -562,12 +569,6 @@ main * {
   color: white;
   padding: 30px;
   border-radius: 25px; }
-
-.portfolio {
-  display: flex;
-  justify-content: center; }
-  .portfolio img {
-    width: 90%; }
 
 .blog {
   text-align: center; }
