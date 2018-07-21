@@ -1,8 +1,30 @@
 
-main * {
-  animation: fadein 1s;
+main {
+
+  * {
+    animation: fadein 1s;
+  }
+
+  h1 {
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+  }
+
+  a {
+    color: #bee1ff;
+
+    &:hover {
+      color: blue;
+    }
+  }
 }
 
+.portfolio {
+  text-align: center;
+
+
+
+}
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }

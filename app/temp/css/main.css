@@ -430,13 +430,13 @@ nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
   background: white;
-  z-index: 2;
-  color: black; }
+  z-index: 2; }
   nav a {
     width: 100%;
     height: 100%;
     text-decoration: none;
-    display: inline-block; }
+    display: inline-block;
+    color: black; }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
@@ -445,7 +445,7 @@ nav {
   height: 320px;
   top: -180px;
   left: -180px; }
-  .top-left h1 {
+  .top-left h1, .top-left h2 {
     color: black;
     text-align: center;
     font-size: 1.75em;
@@ -545,6 +545,18 @@ nav {
 
 main * {
   animation: fadein 1s; }
+
+main h1 {
+  font-family: 'Comfortaa', cursive;
+  text-decoration: underline; }
+
+main a {
+  color: #bee1ff; }
+  main a:hover {
+    color: blue; }
+
+.portfolio {
+  text-align: center; }
 
 @keyframes fadein {
   from {
