@@ -548,7 +548,9 @@ main * {
 
 main h1 {
   font-family: 'Comfortaa', cursive;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-top: 0em; }
 
 main a {
   color: #bee1ff; }
