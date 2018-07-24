@@ -11,7 +11,7 @@ nav {
     display: inline-block;
     color: black;
 
-}
+  }
 }
 
 @mixin wiggle-animation {
@@ -41,6 +41,19 @@ nav {
     font-size: 1.75em;
     margin-top: 240px;
   }
+
+  @mixin atSmall {
+    transform: rotate(-45deg);
+    width: 160px;
+    height: 160px;
+
+    top: -90px;
+    right: -90px;
+
+    box-shadow: 2px 3px 3px black;
+
+  }
+
 }
 
 .top-right {
@@ -62,7 +75,7 @@ nav {
     margin-top: 100px;
     margin-left: -2px;
 
-@include nav-link-style;
+    @include nav-link-style;
   }
 
 }
@@ -82,11 +95,11 @@ nav {
     @include wiggle-animation;
   }
 
-a {
+  a {
     margin-top: 47px;
     margin-left: 62px;
     transform: rotate(90deg);
-@include nav-link-style;
+    @include nav-link-style;
   }
 
 }
@@ -107,7 +120,7 @@ a {
     @include wiggle-animation;
   }
 
-a {
+  a {
     margin-top: 48px;
     margin-right: 101px;
     transform: rotate(-90deg);
@@ -115,7 +128,7 @@ a {
     top: -16%;
     right: 39%;
 
-@include nav-link-style;
+    @include nav-link-style;
 
   }
 

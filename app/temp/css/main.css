@@ -426,6 +426,10 @@ template {
 body {
   background-image: url("../../assets/imgs/pattern.png"); }
 
+@define-mixin atSmall {
+  @media (max-width: 530px) {
+    @mixin-content; } }
+
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
