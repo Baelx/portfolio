@@ -25,6 +25,11 @@ main {
   text-align: center;
 
 
+  @mixin atMedium {
+    .wrapper {
+      display: inline-block;
+    }
+  }
 
 }
 @keyframes fadein {
