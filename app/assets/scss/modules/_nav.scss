@@ -40,20 +40,15 @@ nav {
     text-align: center;
     font-size: 1.75em;
     margin-top: 240px;
-
-    @include mobile {
-      font-size: 1.1em;
-      margin-top: 145px;
-    }
   }
 
-  @include mobile {
+  @mixin atSmall {
     transform: rotate(-45deg);
-    width: 190px;
-    height: 190px;
+    width: 160px;
+    height: 160px;
 
-    top: -110px;
-    left: -110px;
+    top: -90px;
+    right: -90px;
 
     box-shadow: 2px 3px 3px black;
 

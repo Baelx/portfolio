@@ -1,12 +1,11 @@
-
-@mixin mobile {
+@define-mixin atSmall {
   @media (max-width: 530px){
-    @content;
+    @mixin-content;
   }
 }
 
-@mixin tablet {
+@define-mixin atMedium {
   @media (max-width: 776px){
-    @content;
+    @mixin-content;
   }
 }
