@@ -24,14 +24,13 @@ main {
 .portfolio {
   text-align: center;
 
-
-  @mixin atMedium {
-    .wrapper {
-      display: inline-block;
+  .wrapper {
+    @include tablet {
+      display:inline-block;
     }
   }
-
 }
+
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
