@@ -426,14 +426,6 @@ template {
 body {
   background-image: url("../../assets/imgs/pattern.png"); }
 
-@define-mixin atSmall {
-  @media (max-width: 530px) {
-    @mixin-content; } }
-
-@define-mixin atMedium {
-  @media (max-width: 776px) {
-    @mixin-content; } }
-
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
@@ -458,6 +450,18 @@ nav {
     text-align: center;
     font-size: 1.75em;
     margin-top: 240px; }
+    @media (max-width: 530px) {
+      .top-left h1, .top-left h2 {
+        font-size: 1.1em;
+        margin-top: 145px; } }
+  @media (max-width: 530px) {
+    .top-left {
+      transform: rotate(-45deg);
+      width: 190px;
+      height: 190px;
+      top: -110px;
+      left: -110px;
+      box-shadow: 2px 3px 3px black; } }
 
 .top-right {
   transform: rotate(45deg);
@@ -567,6 +571,9 @@ main a {
 
 .portfolio {
   text-align: center; }
+  @media (max-width: 776px) {
+    .portfolio .wrapper {
+      display: inline-block; } }
 
 @keyframes fadein {
   from {

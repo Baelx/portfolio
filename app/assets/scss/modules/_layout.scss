@@ -25,8 +25,9 @@ main {
   text-align: center;
 
 
-  @mixin atMedium {
-    .wrapper {
+  .wrapper {
+    @include tablet {
+
       display: inline-block;
     }
   }
