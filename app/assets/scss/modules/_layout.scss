@@ -67,6 +67,14 @@ main {
   color: white;
   padding: 30px;
   border-radius: 25px;
+
+  @include mobile {
+    width: 85%;
+    margin-top: 50px;
+    padding: 25px;
+    padding-top: 15px;
+    font-size: 1.3rem;
+}
 }
 
 
