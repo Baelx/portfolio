@@ -429,14 +429,14 @@ body {
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: white;
+  background: #fff;
   z-index: 2; }
   nav a {
     width: 100%;
     height: 100%;
     text-decoration: none;
     display: inline-block;
-    color: black; }
+    color: #000; }
 
 .top-left {
   box-shadow: -2px 3px 3px black;
@@ -465,11 +465,11 @@ nav {
 
 .top-right {
   transform: rotate(45deg);
-  width: 160px;
-  height: 160px;
   top: -90px;
   right: -90px;
-  box-shadow: 2px 3px 3px black; }
+  box-shadow: 2px 3px 3px black;
+  width: 160px;
+  height: 160px; }
   @media (max-width: 530px) {
     .top-right {
       width: 145px;
@@ -490,11 +490,11 @@ nav {
 
 .bottom-left {
   transform: rotate(-45deg);
-  width: 160px;
-  height: 160px;
   bottom: -90px;
   left: -90px;
-  box-shadow: 2px 3px 3px black; }
+  box-shadow: 2px 3px 3px black;
+  width: 160px;
+  height: 160px; }
   @media (max-width: 530px) {
     .bottom-left {
       width: 145px;
@@ -504,8 +504,8 @@ nav {
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-left a {
-    margin-top: 47px;
-    margin-left: 62px;
+    margin-top: 43px;
+    margin-left: 61px;
     transform: rotate(90deg);
     font-size: 0.65em;
     text-align: center;
@@ -516,26 +516,23 @@ nav {
 
 .bottom-right {
   transform: rotate(45deg);
-  width: 160px;
-  height: 160px;
   bottom: -90px;
   right: -90px;
-  box-shadow: -2px 3px 3px black; }
+  box-shadow: -2px 3px 3px black;
+  width: 160px;
+  height: 160px; }
   @media (max-width: 530px) {
     .bottom-right {
-      width: 140px;
-      height: 140px; } }
+      width: 145px;
+      height: 145px; } }
   .bottom-right:hover {
     animation-name: bottom-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .bottom-right a {
-    margin-top: 48px;
-    margin-right: 101px;
+    margin-top: 43px;
+    margin-left: -59px;
     transform: rotate(-90deg);
-    position: relative;
-    top: -16%;
-    right: 39%;
     font-size: 0.65em;
     text-align: center;
     line-height: 2; }
@@ -608,7 +605,7 @@ main a {
 .wrapper {
   display: flex; }
   .wrapper .site-wrap {
-    margin: 20px; }
+    margin: 20px 20px 0 20px; }
     .wrapper .site-wrap img {
       max-width: 100%; }
 
