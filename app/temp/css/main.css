@@ -470,16 +470,23 @@ nav {
   top: -90px;
   right: -90px;
   box-shadow: 2px 3px 3px black; }
+  @media (max-width: 530px) {
+    .top-right {
+      width: 145px;
+      height: 145px; } }
   .top-right:hover {
     animation-name: top-right-wiggle;
     animation-duration: 1.25s;
     animation-iteration-count: infinite; }
   .top-right a {
-    margin-top: 100px;
+    margin-top: 95px;
     margin-left: -2px;
     font-size: 0.65em;
     text-align: center;
     line-height: 2; }
+    @media (max-width: 530px) {
+      .top-right a {
+        font-size: 0.45em; } }
 
 .bottom-left {
   transform: rotate(-45deg);
@@ -488,6 +495,10 @@ nav {
   bottom: -90px;
   left: -90px;
   box-shadow: 2px 3px 3px black; }
+  @media (max-width: 530px) {
+    .bottom-left {
+      width: 145px;
+      height: 145px; } }
   .bottom-left:hover {
     animation-name: bottom-left-wiggle;
     animation-duration: 1.25s;
@@ -499,6 +510,9 @@ nav {
     font-size: 0.65em;
     text-align: center;
     line-height: 2; }
+    @media (max-width: 530px) {
+      .bottom-left a {
+        font-size: 0.45em; } }
 
 .bottom-right {
   transform: rotate(45deg);
@@ -507,6 +521,10 @@ nav {
   bottom: -90px;
   right: -90px;
   box-shadow: -2px 3px 3px black; }
+  @media (max-width: 530px) {
+    .bottom-right {
+      width: 140px;
+      height: 140px; } }
   .bottom-right:hover {
     animation-name: bottom-right-wiggle;
     animation-duration: 1.25s;
@@ -521,6 +539,9 @@ nav {
     font-size: 0.65em;
     text-align: center;
     line-height: 2; }
+    @media (max-width: 530px) {
+      .bottom-right a {
+        font-size: 0.45em; } }
 
 @keyframes top-right-wiggle {
   0% {
@@ -563,6 +584,9 @@ main h1 {
   text-decoration: underline;
   font-size: 2rem;
   margin-top: 0em; }
+  @media (max-width: 530px) {
+    main h1 {
+      font-size: 1.3rem; } }
 
 main a {
   color: #bee1ff; }
@@ -594,7 +618,7 @@ main a {
   font-size: 1.4rem;
   margin-top: 80px;
   margin: 80px auto;
-  background-color: #00000080;
+  background-color: #0009;
   color: white;
   padding: 30px;
   border-radius: 25px; }
