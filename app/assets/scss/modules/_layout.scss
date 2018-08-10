@@ -11,9 +11,9 @@ main {
     font-size: 2rem;
     margin-top: 0em;
 
-  @include mobile {
-    font-size: 1.3rem;
-}
+    @include mobile {
+      font-size: 1.3rem;
+    }
   }
 
   a {
@@ -78,7 +78,7 @@ main {
     padding: 25px;
     padding-top: 15px;
     font-size: 1.3rem;
-}
+  }
 }
 
 
@@ -99,11 +99,16 @@ main {
   a {
     margin-right: 20px;
 
+    @include mobile {
+      margin-right: 0px;
+    }
+
 
     &:nth-child(2) {
 
       img {
         filter: invert(95%);
+ 
       }
     }
   }
@@ -111,6 +116,11 @@ main {
   img {
     height: 64px;
     weight: 64px;
+
+    @include mobile {
+      height: 34px;
+
+    }
 
   }
 

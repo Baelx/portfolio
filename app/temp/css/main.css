@@ -638,9 +638,15 @@ main a {
 
 .social-links a {
   margin-right: 20px; }
+  @media (max-width: 530px) {
+    .social-links a {
+      margin-right: 0px; } }
   .social-links a:nth-child(2) img {
     filter: invert(95%); }
 
 .social-links img {
   height: 64px;
   weight: 64px; }
+  @media (max-width: 530px) {
+    .social-links img {
+      height: 34px; } }
