@@ -602,13 +602,6 @@ main a {
   to {
     opacity: 1; } }
 
-.wrapper {
-  display: flex; }
-  .wrapper .site-wrap {
-    margin: 20px 20px 0 20px; }
-    .wrapper .site-wrap img {
-      max-width: 100%; }
-
 .bio, .blog, .portfolio {
   width: 75%;
   font-family: 'Poor Story', cursive;
@@ -651,9 +644,31 @@ main a {
     .social-links img {
       height: 34px; } }
 
+.wrapper {
+  display: flex;
+  justify-content: space-evenly; }
+  .wrapper .site-wrap {
+    width: 398px;
+    height: 288px;
+    margin: 20px 20px 0 20px; }
+    .wrapper .site-wrap a {
+      position: relative;
+      color: white;
+      text-decoration: none;
+      top: 50%;
+      transform: translateY(-50%);
+      display: inline-block; }
+    .wrapper .site-wrap .view-site {
+      background-color: #f9aff4b3; }
+    .wrapper .site-wrap .view-source {
+      background-color: #c9f9afb3; }
+    .wrapper .site-wrap .site-preview-img {
+      max-width: 100%;
+      position: relative;
+      top: -100%; }
+
 .see-more {
   height: 100%;
   width: 50%;
   display: inline-block;
-  float: left;
-  background: white; }
+  float: left; }
