@@ -6,35 +6,41 @@
     width: 398px;
     height: 288px;
     margin: 20px 20px 0 20px;
+    overflow: hidden;
 
+    .site-img {
+      height: 100%;
+      background-image: url('../../assets/imgs/site1.jpg');
+      background-position: center;
+      background-size: cover;
 
-    a {
+    }
+
+    .see-more {
+      height: 100%;
+      width: 50%;
+      float: left;
       position: relative;
-      color: white;
-      text-decoration: none;
-      top: 50%;
-      transform: translateY(-50%);
-      display: inline-block;
+
+      &__reveal {
+        top: -100%;
+      }
+
+      a {
+        position: relative;
+        color: white;
+        text-decoration: none;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+      }
     }
 
     .view-site {
-    background-color: #f9aff4b3;
-}
+      background-color: #f9aff4b3;
+    }
     .view-source {
-    background-color: #c9f9afb3;
-}
-
-    .site-preview-img {
-      max-width: 100%;
-      position: relative;
-      top: -100%;
+      background-color: #c9f9afb3;
     }
   }
-}
-
-.see-more {
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-  float: left;
 }
