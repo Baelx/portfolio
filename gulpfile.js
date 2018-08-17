@@ -13,16 +13,23 @@ gulp.task('sass', function() {
 });
 
 gulp.task('scripts', function(callback) {
-  webpack(require('./webpack.config.js'), function() {
-    console.log("webpack donezo");
+  webpack(require('./webpack.config.js'), function(err, stats) {
+    if (err) {
+      console.log(err.toString())
+    }
+    console.log(stats.toString());
     callback();
-  });
+  })
+});
+
+gulp.task('scriptsRefresh', ['scripts'], function() {
+  browserSync.reload();
 })
 
 gulp.task('watch', ['browserSync', 'sass', 'scripts'], function (){
   gulp.watch('app/assets/scss/**/*.scss', ['sass']);
   gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/assets/js/**/*.js', ['scripts']);
+  gulp.watch('app/assets/js/**/*.js', ['scriptsRefresh']);
 });
 
 gulp.task('browserSync', function() {
@@ -32,7 +39,3 @@ gulp.task('browserSync', function() {
     },
   })
 });
-
-gulp.task('sup', function(){
-  console.log("sup dude");
-})
