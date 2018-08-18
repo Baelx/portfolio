@@ -646,12 +646,21 @@ main a {
 
 .wrapper {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 40px; }
   .wrapper .site-wrap {
     width: 398px;
     height: 288px;
     margin: 20px 20px 0 20px;
     overflow: hidden; }
+    @media (max-width: 776px) {
+      .wrapper .site-wrap {
+        width: 250px;
+        height: 150px; } }
+    @media (max-width: 530px) {
+      .wrapper .site-wrap {
+        width: 180px;
+        height: 100px; } }
     .wrapper .site-wrap .site-img {
       height: 100%;
       background-image: url("../../assets/imgs/site1.jpg");
