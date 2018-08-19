@@ -1,7 +1,9 @@
-const previewImage = document.getElementsByClassName('site-wrap');
 
-console.log(previewImage);
+let boxes = document.querySelectorAll('.site-wrap');
 
-// previewImage.addEventListener('mouseover', () => {
-//   console.log('test');
-// });
+for(i=0; i < boxes.length; i++){
+  boxes[i].addEventListener('mouseover', function(event) {
+    console.log(event);
+    console.log(boxes[i].children);
+  });
+}
