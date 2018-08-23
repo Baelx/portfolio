@@ -1,8 +1,8 @@
+const boxes = Array.from(document.querySelectorAll('.site-wrap'));
 
-let boxes = document.querySelectorAll('.site-wrap');
-
-for(i=0; i < boxes.length; i++){
-  boxes[i].addEventListener('mouseover', (event) => {
-    console.log(event);
-  });
-}
+boxes.forEach(elm => {
+  elm.addEventListener('mouseover', function(event) {
+    // event.target.nextElementSibling.classList.add('see-more__reveal');
+    // event.target.nextElementSibling.nextElementSibling.classList.add('see-more__reveal');
+  })
+})
