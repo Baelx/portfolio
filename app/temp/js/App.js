@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\nlet boxes = document.querySelectorAll('.site-wrap');\n\nfor (i = 0; i < boxes.length; i++) {\n  boxes[i].addEventListener('mouseover', function (event) {\n    console.log(event);\n    console.log(boxes[i].children);\n  });\n}\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
+eval("\nlet boxes = document.querySelectorAll('.site-wrap');\n\nfor (i = 0; i < boxes.length; i++) {\n  boxes[i].addEventListener('mouseover', event => {\n    console.log(event);\n  });\n}\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
 
 /***/ })
 

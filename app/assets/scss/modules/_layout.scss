@@ -82,6 +82,10 @@ main {
 
     @include mobile {
       margin-right: 0px;
+
+      &:last-child img {
+        width: 140px;
+      }
     }
 
 

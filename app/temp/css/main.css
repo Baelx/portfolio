@@ -633,7 +633,9 @@ main a {
   margin-right: 20px; }
   @media (max-width: 530px) {
     .social-links a {
-      margin-right: 0px; } }
+      margin-right: 0px; }
+      .social-links a:last-child img {
+        width: 140px; } }
   .social-links a:nth-child(2) img {
     filter: invert(95%); }
 

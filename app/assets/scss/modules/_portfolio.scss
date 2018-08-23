@@ -12,11 +12,11 @@
     @include tablet {
       width: 250px;
       height: 150px;
-}
+    }
     @include mobile {
       width: 180px;
       height: 100px;
-}
+    }
 
     .site-img {
       height: 100%;
