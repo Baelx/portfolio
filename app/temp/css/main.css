@@ -649,25 +649,23 @@ main a {
 .wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 40px; }
+  margin-top: 20px; }
+  @media (max-width: 530px) {
+    .wrapper {
+      margin-top: 0px; } }
   .wrapper .site-wrap {
-    width: 398px;
-    height: 288px;
     margin: 20px 20px 0 20px;
     overflow: hidden; }
     @media (max-width: 776px) {
       .wrapper .site-wrap {
-        width: 250px;
-        height: 150px; } }
+        margin: 20px 0px 0px 0px; } }
     @media (max-width: 530px) {
       .wrapper .site-wrap {
-        width: 180px;
-        height: 100px; } }
-    .wrapper .site-wrap .site-img {
-      height: 100%;
-      background-image: url("../../assets/imgs/site1.jpg");
-      background-position: center;
-      background-size: cover; }
+        margin: 20px 0px 0px 0px; } }
+    @media (max-width: 530px) {
+      .wrapper .site-wrap .site-img {
+        width: 250px;
+        height: 145px; } }
     .wrapper .site-wrap .see-more {
       height: 100%;
       width: 50%;

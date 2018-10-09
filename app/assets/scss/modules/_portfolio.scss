@@ -1,30 +1,43 @@
 .wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 40px;
+  margin-top: 20px;
+
+  @include mobile {
+  margin-top: 0px;
+}
 
   .site-wrap {
-    width: 398px;
-    height: 288px;
+    // width: 398px;
+    // height: 288px;
     margin: 20px 20px 0 20px;
     overflow: hidden;
 
     @include tablet {
-      width: 250px;
-      height: 150px;
+      // width: 250px;
+      // height: 150px;
+      margin: 20px 0px 0px 0px;
 
     }
     @include mobile {
-      width: 180px;
-      height: 100px;
+      // width: 180px;
+      // height: 100px;
+      margin: 20px 0px 0px 0px;
+
     }
 
     .site-img {
-      height: 100%;
-      background-image: url('../../assets/imgs/site1.jpg');
-      background-position: center;
-      background-size: cover;
 
+      @include tablet {
+        // width: 250px;
+        // height: 150px;
+
+      }
+
+    @include mobile {
+      width: 250px;
+      height: 145px;
+      }
     }
 
     .see-more {
