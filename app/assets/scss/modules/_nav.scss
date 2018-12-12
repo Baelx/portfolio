@@ -26,7 +26,7 @@
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: #fff;
+  background: url("../../assets/imgs/wrinkled.jpg");
   z-index: 2;
 
   a {
@@ -41,7 +41,7 @@ nav {
 
 
 .top-left {
-  box-shadow: -2px 3px 3px black;
+  box-shadow: -6px 5px 10px black;
   transform: rotate(-45deg);
 
   width: 320px;
@@ -71,7 +71,7 @@ nav {
     top: -110px;
     left: -110px;
 
-    box-shadow: 2px 3px 3px black;
+    box-shadow: 4px 5px 10px black;
 
   }
 
@@ -81,7 +81,7 @@ nav {
   transform: rotate(45deg);
   top: -90px;
   right: -90px;
-  box-shadow: 2px 3px 3px black;
+  box-shadow: -4px 5px 10px black;
 
 @include menu-item-size;
 
@@ -103,7 +103,7 @@ nav {
   transform: rotate(-45deg);
   bottom: -90px;
   left: -90px;
-  box-shadow: 2px 3px 3px black;
+  box-shadow: 4px 5px 10px black;
 
   @include menu-item-size;
 
@@ -125,7 +125,7 @@ nav {
   transform: rotate(45deg);
   bottom: -90px;
   right: -90px;
-  box-shadow: -2px 3px 3px black;
+  box-shadow: -4px 5px 10px black;
 
 @include menu-item-size;
 

@@ -423,13 +423,24 @@ template {
 * {
   box-sizing: border-box; }
 
+html, body {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background-image: url("../../assets/imgs/pattern.png"); }
+  background: url("../../assets/imgs/city.jpg") repeat 0 0;
+  -webkit-animation: slide 40s linear infinite; }
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -500px 0; } }
 
 nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
-  background: #fff;
+  background: url("../../assets/imgs/wrinkled.jpg");
   z-index: 2; }
   nav a {
     width: 100%;
@@ -439,7 +450,7 @@ nav {
     color: #000; }
 
 .top-left {
-  box-shadow: -2px 3px 3px black;
+  box-shadow: -6px 5px 10px black;
   transform: rotate(-45deg);
   width: 320px;
   height: 320px;
@@ -461,13 +472,13 @@ nav {
       height: 190px;
       top: -110px;
       left: -110px;
-      box-shadow: 2px 3px 3px black; } }
+      box-shadow: 4px 5px 10px black; } }
 
 .top-right {
   transform: rotate(45deg);
   top: -90px;
   right: -90px;
-  box-shadow: 2px 3px 3px black;
+  box-shadow: -4px 5px 10px black;
   width: 160px;
   height: 160px; }
   @media (max-width: 530px) {
@@ -492,7 +503,7 @@ nav {
   transform: rotate(-45deg);
   bottom: -90px;
   left: -90px;
-  box-shadow: 2px 3px 3px black;
+  box-shadow: 4px 5px 10px black;
   width: 160px;
   height: 160px; }
   @media (max-width: 530px) {
@@ -518,7 +529,7 @@ nav {
   transform: rotate(45deg);
   bottom: -90px;
   right: -90px;
-  box-shadow: -2px 3px 3px black;
+  box-shadow: -4px 5px 10px black;
   width: 160px;
   height: 160px; }
   @media (max-width: 530px) {
