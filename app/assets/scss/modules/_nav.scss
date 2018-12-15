@@ -27,7 +27,7 @@ nav {
   font-family: 'Comfortaa', cursive;
   position: fixed;
   background: url("../../assets/imgs/wrinkled.jpg");
-  z-index: 2;
+  z-index: 1;
 
   a {
     width: 100%;
@@ -43,7 +43,6 @@ nav {
 .top-left {
   box-shadow: -6px 5px 10px black;
   transform: rotate(-45deg);
-// transform: inherit;
 
   width: 320px;
   height: 320px;
