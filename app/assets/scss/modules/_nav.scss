@@ -1,15 +1,75 @@
 nav {
   position: fixed;
   width: 100%;
-  // background: url(../../assets/imgs/wrinkled.jpg);
   background-color: #000000d4;
   color: white;
   top: -1px;
   box-shadow: 0px 3px 3px black;
 
+
+  #visible {
+    width: 100%;
+  }
+
+  #move-up {
+    top: 5px;
+  }
+
+  .nav-margin-left {
+    @include mobile {
+      margin-left: 0;
+    }
+    @include tablet {
+      margin-left: 10px;
+    }
+    margin-left: 50px;
+  }
+  .nav-margin-right {
+    @include tablet {
+      margin-right: 10px;
+    }
+    margin-right: 50px;
+  }
+
   .site-title {
+    @include mobile {
+      float:none;
+      width: 100%;
+    }
     float: left;
-    margin: 0.75rem 0;
+    width: 220px;
+
+    .heading {
+      margin: 0.3em 0 0 0;
+      letter-spacing: 2px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      top: 10px;
+      transition: top 3s ease-out;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+  .wrap {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .new {
+    margin: 0;
+    position: relative;
+    top: -5px;
+    width: 0%;
+    height: 1.5em;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: width 3s;
   }
 
   .nav-link {
@@ -21,11 +81,23 @@ nav {
 }
 
 .nav-list {
+
+  @include mobile {
+    margin: 0 0 1em 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  width: 310px;
   display: inline-block;
   float:right;
   list-style-type: none;
   position: relative;
-  top: 5px;
+  top: 8px;
 
   li {
     float: right;
@@ -33,3 +105,10 @@ nav {
 
   }
 }
+
+
+
+// @keyframes show {
+//   from {width:0%}
+//   to {width:100%;}
+// }

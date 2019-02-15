@@ -437,19 +437,10 @@ body {
 
 .background {
   background: url("../../assets/imgs/city.jpg") repeat 0 0;
-  -webkit-animation: slide 40s linear infinite;
-  will-change: transform;
-  transform: translateZ(0);
   width: 100%;
   height: 100%;
   position: fixed;
   z-index: -1; }
-
-@-webkit-keyframes slide {
-  from {
-    background-position: 0 0; }
-  to {
-    background-position: -500px 0; } }
 
 nav {
   position: fixed;
@@ -458,20 +449,76 @@ nav {
   color: white;
   top: -1px;
   box-shadow: 0px 3px 3px black; }
+  nav #visible {
+    width: 100%; }
+  nav #move-up {
+    top: 5px; }
+  nav .nav-margin-left {
+    margin-left: 50px; }
+    @media (max-width: 560px) {
+      nav .nav-margin-left {
+        margin-left: 0; } }
+    @media (max-width: 776px) {
+      nav .nav-margin-left {
+        margin-left: 10px; } }
+  nav .nav-margin-right {
+    margin-right: 50px; }
+    @media (max-width: 776px) {
+      nav .nav-margin-right {
+        margin-right: 10px; } }
   nav .site-title {
     float: left;
-    margin: 0.75rem 0; }
+    width: 220px; }
+    @media (max-width: 560px) {
+      nav .site-title {
+        float: none;
+        width: 100%; } }
+    nav .site-title .heading {
+      margin: 0.3em 0 0 0;
+      letter-spacing: 2px;
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      position: relative;
+      top: 10px;
+      transition: top 3s ease-out; }
+      nav .site-title .heading a {
+        color: white;
+        text-decoration: none; }
+  nav .wrap {
+    text-align: center;
+    display: flex;
+    justify-content: center; }
+  nav .new {
+    margin: 0;
+    position: relative;
+    top: -5px;
+    width: 0%;
+    height: 1.5em;
+    overflow: hidden;
+    line-height: 1.5em;
+    transition: width 3s; }
   nav .nav-link {
     color: white;
     text-decoration: none;
     margin: 0 1rem; }
 
 .nav-list {
+  width: 310px;
   display: inline-block;
   float: right;
   list-style-type: none;
   position: relative;
-  top: 5px; }
+  top: 8px; }
+  @media (max-width: 560px) {
+    .nav-list {
+      margin: 0 0 1em 0;
+      width: 100%;
+      text-align: center;
+      float: none;
+      display: flex;
+      justify-content: center;
+      padding: 0; } }
   .nav-list li {
     float: right;
     font-size: 1.2rem; }
@@ -484,7 +531,7 @@ main h1 {
   text-decoration: underline;
   font-size: 2rem;
   margin-top: 0em; }
-  @media (max-width: 530px) {
+  @media (max-width: 560px) {
     main h1 {
       font-size: 1.3rem; } }
 
@@ -509,16 +556,15 @@ main a {
   width: 75%;
   font-family: 'Poor Story', cursive;
   font-size: 1.4rem;
-  margin-top: 150px;
-  margin: 80px auto;
+  margin: 115px auto;
   background-color: #0009;
   color: white;
   padding: 30px;
   border-radius: 25px; }
-  @media (max-width: 530px) {
+  @media (max-width: 560px) {
     .bio, .blog, .portfolio {
       width: 85%;
-      margin-top: 50px;
+      margin-top: 150px;
       padding: 25px;
       padding-top: 15px;
       font-size: 1.3rem; } }
@@ -534,7 +580,7 @@ main a {
 
 .social-links a {
   margin-right: 20px; }
-  @media (max-width: 530px) {
+  @media (max-width: 560px) {
     .social-links a {
       margin-right: 0px; }
       .social-links a:last-child img {
@@ -545,7 +591,7 @@ main a {
 .social-links img {
   height: 64px;
   weight: 64px; }
-  @media (max-width: 530px) {
+  @media (max-width: 560px) {
     .social-links img {
       height: 34px; } }
 
@@ -553,7 +599,7 @@ main a {
   display: flex;
   justify-content: space-evenly;
   margin-top: 20px; }
-  @media (max-width: 530px) {
+  @media (max-width: 560px) {
     .wrapper {
       margin-top: 0px; } }
   .wrapper .site-wrap {
@@ -562,10 +608,10 @@ main a {
     @media (max-width: 776px) {
       .wrapper .site-wrap {
         margin: 20px 0px 0px 0px; } }
-    @media (max-width: 530px) {
+    @media (max-width: 560px) {
       .wrapper .site-wrap {
         margin: 20px 0px 0px 0px; } }
-    @media (max-width: 530px) {
+    @media (max-width: 560px) {
       .wrapper .site-wrap .site-img {
         width: 250px;
         height: 145px; } }
