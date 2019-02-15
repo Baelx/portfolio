@@ -429,7 +429,8 @@ template {
 
 html, body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Poor Story', cursive; }
 
 body {
   padding-top: 1px; }
@@ -450,155 +451,30 @@ body {
   to {
     background-position: -500px 0; } }
 
-.nav {
-  font-family: 'Comfortaa', cursive;
+nav {
   position: fixed;
-  background: url("../../assets/imgs/wrinkled.jpg");
-  z-index: 1; }
-  .nav a {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  background-color: #000000d4;
+  color: white;
+  top: -1px;
+  box-shadow: 0px 3px 3px black; }
+  nav .site-title {
+    float: left;
+    margin: 0.75rem 0; }
+  nav .nav-link {
+    color: white;
     text-decoration: none;
-    display: inline-block;
-    color: #000; }
+    margin: 0 1rem; }
 
-.nav__main-title {
-  box-shadow: -6px 5px 10px black;
-  transform: rotate(-45deg);
-  width: 320px;
-  height: 320px;
-  top: -180px;
-  left: -180px; }
-  .nav__main-title h1 {
-    color: black;
-    text-align: center;
-    font-size: 1.75em;
-    margin-top: 240px; }
-    @media (max-width: 530px) {
-      .nav__main-title h1 {
-        font-size: 1.1em;
-        margin-top: 145px; } }
-  @media (max-width: 530px) {
-    .nav__main-title {
-      transform: rotate(-45deg);
-      width: 190px;
-      height: 190px;
-      top: -110px;
-      left: -110px;
-      box-shadow: 4px 5px 10px black; } }
-
-ul {
-  margin: 0; }
-
-.nav__bio {
-  transform: rotate(45deg);
-  top: -90px;
-  right: -90px;
-  box-shadow: -4px 5px 10px black;
-  width: 160px;
-  height: 160px; }
-  @media (max-width: 530px) {
-    .nav__bio {
-      width: 145px;
-      height: 145px; } }
-  .nav__bio:hover {
-    animation-name: top-right-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite; }
-  .nav__bio a {
-    margin-top: 95px;
-    margin-left: -2px;
-    font-size: 0.65em;
-    text-align: center;
-    line-height: 2; }
-    @media (max-width: 530px) {
-      .nav__bio a {
-        font-size: 0.45em; } }
-
-.nav__portfolio {
-  transform: rotate(-45deg);
-  bottom: -90px;
-  left: -90px;
-  box-shadow: 4px 5px 10px black;
-  width: 160px;
-  height: 160px; }
-  @media (max-width: 530px) {
-    .nav__portfolio {
-      width: 145px;
-      height: 145px; } }
-  .nav__portfolio:hover {
-    animation-name: bottom-left-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite; }
-  .nav__portfolio a {
-    margin-top: 44px;
-    margin-left: 61px;
-    transform: rotate(90deg);
-    font-size: 0.65em;
-    text-align: center;
-    line-height: 2; }
-    @media (max-width: 530px) {
-      .nav__portfolio a {
-        font-size: 0.45em; } }
-
-.nav__writing {
-  transform: rotate(45deg);
-  bottom: -90px;
-  right: -90px;
-  box-shadow: -4px 5px 10px black;
-  width: 160px;
-  height: 160px; }
-  @media (max-width: 530px) {
-    .nav__writing {
-      width: 145px;
-      height: 145px; } }
-  .nav__writing:hover {
-    animation-name: bottom-right-wiggle;
-    animation-duration: 1.25s;
-    animation-iteration-count: infinite; }
-  .nav__writing a {
-    margin-top: 43px;
-    margin-left: -59px;
-    transform: rotate(-90deg);
-    font-size: 0.65em;
-    text-align: center;
-    line-height: 2; }
-    @media (max-width: 530px) {
-      .nav__writing a {
-        font-size: 0.45em; } }
-
-@keyframes top-right-wiggle {
-  0% {
-    top: -90px;
-    right: -90px; }
-  50% {
-    top: -85px;
-    right: -85px; }
-  100% {
-    top: -90px;
-    right: -90px; } }
-
-@keyframes bottom-left-wiggle {
-  0% {
-    bottom: -90px;
-    left: -90px; }
-  50% {
-    bottom: -85px;
-    left: -85px; }
-  100% {
-    bottom: -90px;
-    left: -90px; } }
-
-@keyframes bottom-right-wiggle {
-  0% {
-    bottom: -90px;
-    right: -90px; }
-  50% {
-    bottom: -85px;
-    right: -85px; }
-  100% {
-    bottom: -90px;
-    right: -90px; } }
+.nav-list {
+  display: inline-block;
+  float: right;
+  list-style-type: none;
+  position: relative;
+  top: 5px; }
+  .nav-list li {
+    float: right;
+    font-size: 1.2rem; }
 
 main * {
   animation: fadein 1s; }
