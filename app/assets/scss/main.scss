@@ -1,6 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* Modules */
 @import '../../../node_modules/normalize-scss/fork-versions/default/_normalize';
 @import 'base/_global';
 @import 'base/_media-queries';
+@import 'base/_vars';
 @import 'modules/_nav';
 @import 'modules/_test';
 @import 'modules/_layout';
