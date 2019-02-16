@@ -450,19 +450,22 @@ nav {
   top: -1px;
   box-shadow: 0px 3px 3px black; }
   nav #visible {
-    width: 100%; }
+    opacity: 1; }
   nav #move-up {
-    top: 5px; }
+    transform: translateY(3px); }
   nav .nav-margin-left {
     margin-left: 50px; }
-    @media (max-width: 560px) {
-      nav .nav-margin-left {
-        margin-left: 0; } }
     @media (max-width: 776px) {
       nav .nav-margin-left {
         margin-left: 10px; } }
+    @media (max-width: 560px) {
+      nav .nav-margin-left {
+        margin-left: 0px; } }
   nav .nav-margin-right {
     margin-right: 50px; }
+    @media (max-width: 560px) {
+      nav .nav-margin-right {
+        margin-right: 0px; } }
     @media (max-width: 776px) {
       nav .nav-margin-right {
         margin-right: 10px; } }
@@ -480,8 +483,9 @@ nav {
       color: white;
       text-decoration: none;
       position: relative;
-      top: 10px;
-      transition: top 3s ease-out; }
+      transform: translateY(10px);
+      transition: transform 1s ease-out;
+      will-change: transition, transform; }
       nav .site-title .heading a {
         color: white;
         text-decoration: none; }
@@ -491,13 +495,11 @@ nav {
     justify-content: center; }
   nav .new {
     margin: 0;
+    opacity: 0;
+    top: -3px;
     position: relative;
-    top: -5px;
-    width: 0%;
-    height: 1.5em;
-    overflow: hidden;
-    line-height: 1.5em;
-    transition: width 3s; }
+    transition: opacity 1s ease-out;
+    will-change: transition, opacity; }
   nav .nav-link {
     color: white;
     text-decoration: none;
@@ -521,7 +523,10 @@ nav {
       padding: 0; } }
   .nav-list li {
     float: right;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    transition: font-size 0.1s ease-out; }
+    .nav-list li:hover {
+      font-size: 1.3rem; }
 
 main * {
   animation: fadein 1s; }
@@ -569,7 +574,7 @@ main a {
       padding-top: 15px;
       font-size: 1.3rem; } }
 
-.blog {
+.blog h2 {
   text-align: center; }
 
 .signature {

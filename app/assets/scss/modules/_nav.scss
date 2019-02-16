@@ -8,23 +8,29 @@ nav {
 
 
   #visible {
-    width: 100%;
+    opacity: 1;
   }
 
   #move-up {
-    top: 5px;
+    transform: translateY(3px);
   }
 
   .nav-margin-left {
-    @include mobile {
-      margin-left: 0;
-    }
+    margin-left: 50px;
+
+
     @include tablet {
       margin-left: 10px;
     }
-    margin-left: 50px;
+    @include mobile {
+      margin-left: 0px;
+    }
   }
   .nav-margin-right {
+    @include mobile {
+      margin-right: 0px;
+    }
+
     @include tablet {
       margin-right: 10px;
     }
@@ -46,12 +52,14 @@ nav {
       color: white;
       text-decoration: none;
       position: relative;
-      top: 10px;
-      transition: top 3s ease-out;
+      transform: translateY(10px);
+      transition: transform 1s ease-out;
+      will-change: transition, transform;
 
       a {
         color: white;
         text-decoration: none;
+
       }
     }
   }
@@ -63,13 +71,12 @@ nav {
 
   .new {
     margin: 0;
+    opacity: 0;
+    top: -3px;
     position: relative;
-    top: -5px;
-    width: 0%;
-    height: 1.5em;
-    overflow: hidden;
-    line-height: 1.5em;
-    transition: width 3s;
+    transition: opacity 1s ease-out;
+    will-change: transition, opacity;
+
   }
 
   .nav-link {
@@ -102,13 +109,10 @@ nav {
   li {
     float: right;
     font-size: 1.2rem;
+    transition: font-size 0.1s ease-out;
 
+    &:hover {
+      font-size: 1.3rem;
+    }
   }
 }
-
-
-
-// @keyframes show {
-//   from {width:0%}
-//   to {width:100%;}
-// }
