@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("let newSiteNotice = document.getElementsByClassName('new');\nlet siteTitleHeading = document.getElementsByClassName('heading');\n\nwindow.setTimeout(() => {\n  newSiteNotice[0].id = 'visible';\n  siteTitleHeading[0].id = 'move-up';\n}, 2000);\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
+eval("let newSiteNotice = document.getElementsByClassName('new');\nlet siteTitleHeading = document.getElementsByClassName('heading');\n\n// let imgs = document.getElementsByClassName('site-img');\n// let desc = document.getElementsByClassName('description');\n//\n// for (let i of imgs) => {\n//   desc[i].width = imgs[i].width;\n//   desc[i].height =imgs[i].width;\n// })\n\nwindow.setTimeout(() => {\n  newSiteNotice[0].id = 'visible';\n  siteTitleHeading[0].id = 'move-up';\n}, 2000);\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
 
 /***/ })
 

@@ -448,7 +448,8 @@ nav {
   background-color: #000000d4;
   color: white;
   top: -1px;
-  box-shadow: 0px 3px 3px black; }
+  box-shadow: 0px 3px 3px black;
+  z-index: 1; }
   nav #visible {
     opacity: 1; }
   nav #move-up {
@@ -557,28 +558,36 @@ main a {
   to {
     opacity: 1; } }
 
-.bio, .blog, .portfolio {
+main {
   width: 80%;
   font-family: 'Poor Story', cursive;
   font-size: 1.4rem;
   margin: 115px auto;
   background-color: #0009;
   color: white;
-  padding: 30px;
+  padding: 45px 30px;
   border-radius: 25px; }
   @media (max-width: 560px) {
-    .bio, .blog, .portfolio {
+    main {
       width: 85%;
       margin-top: 150px;
       padding: 25px;
       padding-top: 15px;
       font-size: 1.3rem; } }
   @media (max-width: 776px) {
-    .bio, .blog, .portfolio {
+    main {
       width: 85%; } }
   @media (max-width: 1000px) {
-    .bio, .blog, .portfolio {
+    main {
       width: 85%; } }
+
+.portfolio h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: underline;
+  margin: 3em;
+  width: 100%; }
 
 .blog h2 {
   text-align: center;
@@ -619,9 +628,13 @@ main a {
     .wrapper {
       margin-top: 0px; } }
   .wrapper .site-wrap {
-    margin: 20px 20px 0 20px; }
+    margin: 20px 20px 0 20px;
+    width: auto;
+    height: 225px; }
     @media (max-width: 776px) {
       .wrapper .site-wrap {
+        width: 100%;
+        height: auto;
         margin: 20px 0px 0px 0px; } }
     @media (max-width: 560px) {
       .wrapper .site-wrap {
@@ -633,6 +646,8 @@ main a {
       height: 225px;
       opacity: 0;
       transition: .5s ease; }
+      .wrapper .site-wrap .description p {
+        padding: 0 0.5em; }
       @media (max-width: 560px) {
         .wrapper .site-wrap .description {
           width: 100%;
@@ -642,25 +657,18 @@ main a {
           width: 250px;
           height: 150px; } }
     .wrapper .site-wrap .site-img {
-      width: 400px;
-      height: 225px;
+      width: 100%;
+      height: auto;
       opacity: 1;
       transition: .5s ease;
-      backface-visibility: hidden; }
-      @media (max-width: 560px) {
-        .wrapper .site-wrap .site-img {
-          width: 100%;
-          height: 100%; } }
-      @media (max-width: 1000px) {
-        .wrapper .site-wrap .site-img {
-          width: 250px;
-          height: 150px; } }
+      backface-visibility: hidden;
+      border-radius: 3px; }
 
-.site-wrap:hover .description {
+.site-wrap:hover .description, .site-wrap:active .description {
   opacity: 1; }
 
-.site-wrap:hover .site-img:hover {
+.site-wrap:hover .site-img:hover, .site-wrap:active .site-img:active {
   opacity: 0.3; }
 
-.site-wrap:hover .description {
+.site-wrap:hover .description, .site-wrap:active .description {
   border: 1px solid white; }
