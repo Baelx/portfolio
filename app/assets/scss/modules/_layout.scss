@@ -60,6 +60,16 @@ main {
     padding-top: 15px;
     font-size: 1.3rem;
   }
+
+  @include tablet {
+    width: 85%;
+
+  }
+
+  @include largeTablet {
+    width: 85%;
+
+  }
 }
 
 

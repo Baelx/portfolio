@@ -573,6 +573,12 @@ main a {
       padding: 25px;
       padding-top: 15px;
       font-size: 1.3rem; } }
+  @media (max-width: 776px) {
+    .bio, .blog, .portfolio {
+      width: 85%; } }
+  @media (max-width: 1000px) {
+    .bio, .blog, .portfolio {
+      width: 85%; } }
 
 .blog h2 {
   text-align: center; }
@@ -603,13 +609,13 @@ main a {
 .wrapper {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-top: 20px; }
   @media (max-width: 560px) {
     .wrapper {
       margin-top: 0px; } }
   .wrapper .site-wrap {
-    margin: 20px 20px 0 20px;
-    overflow: hidden; }
+    margin: 20px 20px 0 20px; }
     @media (max-width: 776px) {
       .wrapper .site-wrap {
         margin: 20px 0px 0px 0px; } }
