@@ -1,13 +1,6 @@
-const boxes = Array.from(document.querySelectorAll('.site-wrap'));
-const newSiteNotice = document.getElementsByClassName('new');
-const siteTitleHeading = document.getElementsByClassName('heading');
+let newSiteNotice = document.getElementsByClassName('new');
+let siteTitleHeading = document.getElementsByClassName('heading');
 
-boxes.forEach(elm => {
-  elm.addEventListener('mouseover', function(event) {
-    // event.target.nextElementSibling.classList.add('see-more__reveal');
-    // event.target.nextElementSibling.nextElementSibling.classList.add('see-more__reveal');
-  })
-})
 
 window.setTimeout(() => {
   newSiteNotice[0].id = 'visible';

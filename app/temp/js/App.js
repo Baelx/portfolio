@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("const boxes = Array.from(document.querySelectorAll('.site-wrap'));\nconst newSiteNotice = document.getElementsByClassName('new');\nconst siteTitleHeading = document.getElementsByClassName('heading');\n\nboxes.forEach(elm => {\n  elm.addEventListener('mouseover', function (event) {\n    // event.target.nextElementSibling.classList.add('see-more__reveal');\n    // event.target.nextElementSibling.nextElementSibling.classList.add('see-more__reveal');\n  });\n});\n\nwindow.setTimeout(() => {\n  newSiteNotice[0].id = 'visible';\n  siteTitleHeading[0].id = 'move-up';\n}, 2000);\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
+eval("let newSiteNotice = document.getElementsByClassName('new');\nlet siteTitleHeading = document.getElementsByClassName('heading');\n\nwindow.setTimeout(() => {\n  newSiteNotice[0].id = 'visible';\n  siteTitleHeading[0].id = 'move-up';\n}, 2000);\n\n//# sourceURL=webpack:///./app/assets/js/App.js?");
 
 /***/ })
 
