@@ -546,12 +546,6 @@ main a {
   main a:hover {
     color: blue; }
 
-.portfolio {
-  text-align: center; }
-  @media (max-width: 776px) {
-    .portfolio .wrapper {
-      display: inline-block; } }
-
 @keyframes fadein {
   from {
     opacity: 0; }
@@ -619,56 +613,78 @@ main {
     .social-links img {
       height: 34px; } }
 
-.wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 20px; }
-  @media (max-width: 560px) {
-    .wrapper {
-      margin-top: 0px; } }
-  .wrapper .site-wrap {
-    margin: 20px 20px 0 20px;
-    width: auto;
-    height: 225px; }
-    @media (max-width: 776px) {
-      .wrapper .site-wrap {
+.portfolio {
+  text-align: center; }
+  .portfolio .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center; }
+    @media (max-width: 560px) {
+      .portfolio .wrapper {
+        margin-top: 0px; } }
+    .portfolio .wrapper .site-wrap {
+      margin: 20px 20px 20px 20px;
+      width: auto;
+      height: auto; }
+      @media (max-width: 1180px) {
+        .portfolio .wrapper .site-wrap {
+          width: 300px;
+          height: 155px; } }
+      @media (max-width: 1000px) {
+        .portfolio .wrapper .site-wrap {
+          width: 600px;
+          height: 312px; } }
+      @media (max-width: 776px) {
+        .portfolio .wrapper .site-wrap {
+          width: 400px;
+          height: 208px;
+          margin: 40px 0px 0px 0px; } }
+      @media (max-width: 560px) {
+        .portfolio .wrapper .site-wrap {
+          margin: 40px 0px 0px 0px;
+          width: 200px;
+          height: 104px; } }
+      .portfolio .wrapper .site-wrap .description {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 400px;
+        height: 225px;
+        opacity: 0;
+        transition: .5s ease;
+        border: 1px solid black; }
+        .portfolio .wrapper .site-wrap .description p {
+          padding: 0 0.5em; }
+        @media (max-width: 1180px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 300px;
+            height: 170px; } }
+        @media (max-width: 1000px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 600px;
+            height: 339px; } }
+        @media (max-width: 776px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 400px;
+            height: 225px;
+            font-size: 0.65em; } }
+        @media (max-width: 560px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 200px;
+            height: 114px;
+            font-size: 0.65em; } }
+      .portfolio .wrapper .site-wrap .site-img {
         width: 100%;
         height: auto;
-        margin: 20px 0px 0px 0px; } }
-    @media (max-width: 560px) {
-      .wrapper .site-wrap {
-        margin: 20px 0px 0px 0px; } }
-    .wrapper .site-wrap .description {
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.6);
-      width: 400px;
-      height: 225px;
-      opacity: 0;
-      transition: .5s ease; }
-      .wrapper .site-wrap .description p {
-        padding: 0 0.5em; }
-      @media (max-width: 560px) {
-        .wrapper .site-wrap .description {
-          width: 100%;
-          height: 100%; } }
-      @media (max-width: 1000px) {
-        .wrapper .site-wrap .description {
-          width: 250px;
-          height: 150px; } }
-    .wrapper .site-wrap .site-img {
-      width: 100%;
-      height: auto;
-      opacity: 1;
-      transition: .5s ease;
-      backface-visibility: hidden;
-      border-radius: 3px; }
-
-.site-wrap:hover .description, .site-wrap:active .description {
-  opacity: 1; }
-
-.site-wrap:hover .site-img:hover, .site-wrap:active .site-img:active {
-  opacity: 0.3; }
-
-.site-wrap:hover .description, .site-wrap:active .description {
-  border: 1px solid white; }
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        border: 1px solid black; }
+  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+    opacity: 1; }
+  .portfolio .site-wrap:hover .site-img:hover, .portfolio .site-wrap:active .site-img:active {
+    opacity: 0.3; }
+  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+    border: 1px solid white; }

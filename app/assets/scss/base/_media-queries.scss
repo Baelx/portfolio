@@ -15,3 +15,10 @@
     @content;
   }
 }
+
+
+@mixin smallScreen {
+  @media (max-width: 1180px){
+    @content;
+  }
+}
