@@ -9,3 +9,16 @@
     @content;
   }
 }
+
+@mixin largeTablet {
+  @media (max-width: 1000px){
+    @content;
+  }
+}
+
+
+@mixin smallScreen {
+  @media (max-width: 1180px){
+    @content;
+  }
+}

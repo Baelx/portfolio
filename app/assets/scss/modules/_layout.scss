@@ -25,32 +25,20 @@ main {
   }
 }
 
-.portfolio {
-  text-align: center;
-
-
-  .wrapper {
-    @include tablet {
-
-      display: inline-block;
-    }
-  }
-
-}
 @keyframes fadein {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
-.bio, .blog, .portfolio {
+main {
 
-  width: 75%;
+  width: 80%;
   font-family: 'Poor Story', cursive;
   font-size: 1.4rem;
   margin: 115px auto;
   background-color: #0009;
   color: white;
-  padding: 30px;
+  padding: 45px 30px;
   border-radius: 25px;
 
   @include mobile {
@@ -60,14 +48,38 @@ main {
     padding-top: 15px;
     font-size: 1.3rem;
   }
+
+  @include tablet {
+    width: 85%;
+
+  }
+
+  @include largeTablet {
+    width: 85%;
+
+  }
 }
 
+
+.portfolio {
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    margin: 3em;
+    width: 100%;
+  }
+}
 
 .blog {
 
   h2 {
     text-align: center;
-
+    font-family: 'Comfortaa', cursive;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 0em;
   }
 }
 

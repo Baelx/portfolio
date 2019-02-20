@@ -448,7 +448,8 @@ nav {
   background-color: #000000d4;
   color: white;
   top: -1px;
-  box-shadow: 0px 3px 3px black; }
+  box-shadow: 0px 3px 3px black;
+  z-index: 1; }
   nav #visible {
     opacity: 1; }
   nav #move-up {
@@ -545,37 +546,49 @@ main a {
   main a:hover {
     color: blue; }
 
-.portfolio {
-  text-align: center; }
-  @media (max-width: 776px) {
-    .portfolio .wrapper {
-      display: inline-block; } }
-
 @keyframes fadein {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
-.bio, .blog, .portfolio {
-  width: 75%;
+main {
+  width: 80%;
   font-family: 'Poor Story', cursive;
   font-size: 1.4rem;
   margin: 115px auto;
   background-color: #0009;
   color: white;
-  padding: 30px;
+  padding: 45px 30px;
   border-radius: 25px; }
   @media (max-width: 560px) {
-    .bio, .blog, .portfolio {
+    main {
       width: 85%;
       margin-top: 150px;
       padding: 25px;
       padding-top: 15px;
       font-size: 1.3rem; } }
+  @media (max-width: 776px) {
+    main {
+      width: 85%; } }
+  @media (max-width: 1000px) {
+    main {
+      width: 85%; } }
+
+.portfolio h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: underline;
+  margin: 3em;
+  width: 100%; }
 
 .blog h2 {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: underline;
+  font-size: 2rem;
+  margin-top: 0em; }
 
 .signature {
   float: right; }
@@ -600,41 +613,78 @@ main a {
     .social-links img {
       height: 34px; } }
 
-.wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px; }
-  @media (max-width: 560px) {
-    .wrapper {
-      margin-top: 0px; } }
-  .wrapper .site-wrap {
-    margin: 20px 20px 0 20px;
-    overflow: hidden; }
-    @media (max-width: 776px) {
-      .wrapper .site-wrap {
-        margin: 20px 0px 0px 0px; } }
+.portfolio {
+  text-align: center; }
+  .portfolio .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center; }
     @media (max-width: 560px) {
-      .wrapper .site-wrap {
-        margin: 20px 0px 0px 0px; } }
-    @media (max-width: 560px) {
-      .wrapper .site-wrap .site-img {
-        width: 250px;
-        height: 145px; } }
-    .wrapper .site-wrap .see-more {
-      height: 100%;
-      width: 50%;
-      float: left;
-      position: relative; }
-      .wrapper .site-wrap .see-more__reveal {
-        top: -100%; }
-      .wrapper .site-wrap .see-more a {
-        position: relative;
-        color: white;
-        text-decoration: none;
-        top: 50%;
-        transform: translateY(-50%);
-        display: inline-block; }
-    .wrapper .site-wrap .view-site {
-      background-color: #f9aff4b3; }
-    .wrapper .site-wrap .view-source {
-      background-color: #c9f9afb3; }
+      .portfolio .wrapper {
+        margin-top: 0px; } }
+    .portfolio .wrapper .site-wrap {
+      margin: 20px 20px 20px 20px;
+      width: auto;
+      height: auto; }
+      @media (max-width: 1180px) {
+        .portfolio .wrapper .site-wrap {
+          width: 300px;
+          height: 155px; } }
+      @media (max-width: 1000px) {
+        .portfolio .wrapper .site-wrap {
+          width: 600px;
+          height: 312px; } }
+      @media (max-width: 776px) {
+        .portfolio .wrapper .site-wrap {
+          width: 400px;
+          height: 208px;
+          margin: 40px 0px 0px 0px; } }
+      @media (max-width: 560px) {
+        .portfolio .wrapper .site-wrap {
+          margin: 40px 0px 0px 0px;
+          width: 200px;
+          height: 104px; } }
+      .portfolio .wrapper .site-wrap .description {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 400px;
+        height: 225px;
+        opacity: 0;
+        transition: .5s ease;
+        border: 1px solid black; }
+        .portfolio .wrapper .site-wrap .description p {
+          padding: 0 0.5em; }
+        @media (max-width: 1180px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 300px;
+            height: 170px; } }
+        @media (max-width: 1000px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 600px;
+            height: 339px; } }
+        @media (max-width: 776px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 400px;
+            height: 225px;
+            font-size: 0.65em; } }
+        @media (max-width: 560px) {
+          .portfolio .wrapper .site-wrap .description {
+            width: 200px;
+            height: 114px;
+            font-size: 0.65em; } }
+      .portfolio .wrapper .site-wrap .site-img {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        border: 1px solid black; }
+  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+    opacity: 1; }
+  .portfolio .site-wrap:hover .site-img:hover, .portfolio .site-wrap:active .site-img:active {
+    opacity: 0.3; }
+  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+    border: 1px solid white; }

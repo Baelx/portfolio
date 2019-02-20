@@ -1,70 +1,110 @@
-.wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 20px;
+.portfolio {
+  text-align: center;
 
-  @include mobile {
-  margin-top: 0px;
-}
+  .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
 
-  .site-wrap {
-    // width: 398px;
-    // height: 288px;
-    margin: 20px 20px 0 20px;
-    overflow: hidden;
 
-    @include tablet {
-      // width: 250px;
-      // height: 150px;
-      margin: 20px 0px 0px 0px;
-
-    }
     @include mobile {
-      // width: 180px;
-      // height: 100px;
-      margin: 20px 0px 0px 0px;
-
+      margin-top: 0px;
     }
 
-    .site-img {
+
+
+    .site-wrap {
+      margin: 20px 20px 20px 20px;
+      width: auto;
+      height: auto;
+
+      @include smallScreen {
+        width: 300px;
+        height: 155px;
+      }
+
+      @include largeTablet {
+        width: 600px;
+        height: 312px;
+      }
 
       @include tablet {
-        // width: 250px;
-        // height: 150px;
+        width: 400px;
+        height: 208px;
+        margin: 40px 0px 0px 0px;
 
       }
 
-    @include mobile {
-      width: 250px;
-      height: 145px;
-      }
-    }
-
-    .see-more {
-      height: 100%;
-      width: 50%;
-      float: left;
-      position: relative;
-
-      &__reveal {
-        top: -100%;
+      @include mobile {
+        margin: 40px 0px 0px 0px;
+        width: 200px;
+        height: 104px;
       }
 
-      a {
-        position: relative;
-        color: white;
-        text-decoration: none;
-        top: 50%;
-        transform: translateY(-50%);
-        display: inline-block;
-      }
-    }
 
-    .view-site {
-      background-color: #f9aff4b3;
-    }
-    .view-source {
-      background-color: #c9f9afb3;
+
+
+      .description {
+        position: absolute;
+        background-color:rgba(0, 0, 0, 0.6);
+        width: 400px;
+        height: 225px;
+        opacity: 0;
+        transition: .5s ease;
+        border: 1px solid black;
+
+
+        p {
+          padding: 0 0.5em;
+        }
+
+        @include smallScreen {
+          width: 300px;
+          height: 170px;
+        }
+
+        @include largeTablet {
+          width: 600px;
+          height: 339px;
+        }
+
+        @include tablet {
+          width: 400px;
+          height: 225px;
+          font-size: 0.65em;
+        }
+
+        @include mobile {
+          width: 200px;
+          height: 114px;
+          font-size: 0.65em;
+
+        }
+      }
+
+      .site-img {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        border: 1px solid black;
+
+      }
     }
   }
+
+  .site-wrap:hover .description, .site-wrap:active .description  {
+    opacity: 1;
+  }
+  .site-wrap:hover .site-img:hover, .site-wrap:active .site-img:active {
+    opacity: 0.3;
+  }
+  .site-wrap:hover .description, .site-wrap:active .description{
+    border: 1px solid white;
+  }
+
 }
