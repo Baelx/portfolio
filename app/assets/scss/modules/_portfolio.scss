@@ -97,14 +97,26 @@
     }
   }
 
-  .site-wrap:hover .description, .site-wrap:active .description  {
+  @include hoverAnimation {
+    .site-wrap:hover .description, .site-wrap:active .description  {
+      opacity: 1;
+    }
+    .site-wrap:hover .site-img:hover, .site-wrap:active .site-img:active {
+      opacity: 0.3;
+    }
+    .site-wrap:hover .description, .site-wrap:active .description{
+      border: 1px solid white;
+    }
+
+  }
+
+ // Applied to .description and .site-img respectively
+  #show-description  {
     opacity: 1;
-  }
-  .site-wrap:hover .site-img:hover, .site-wrap:active .site-img:active {
-    opacity: 0.3;
-  }
-  .site-wrap:hover .description, .site-wrap:active .description{
     border: 1px solid white;
+  }
+   #fade-site-img {
+    opacity: 0.3;
   }
 
 }

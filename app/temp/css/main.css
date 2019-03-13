@@ -682,9 +682,15 @@ main {
         backface-visibility: hidden;
         border-radius: 3px;
         border: 1px solid black; }
-  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
-    opacity: 1; }
-  .portfolio .site-wrap:hover .site-img:hover, .portfolio .site-wrap:active .site-img:active {
-    opacity: 0.3; }
-  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+  @media (min-width: 776px) {
+    .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+      opacity: 1; }
+    .portfolio .site-wrap:hover .site-img:hover, .portfolio .site-wrap:active .site-img:active {
+      opacity: 0.3; }
+    .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+      border: 1px solid white; } }
+  .portfolio #show-description {
+    opacity: 1;
     border: 1px solid white; }
+  .portfolio #fade-site-img {
+    opacity: 0.3; }
