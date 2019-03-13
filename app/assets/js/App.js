@@ -1,10 +1,8 @@
 let newSiteNotice = document.getElementsByClassName('new');
 let siteTitleHeading = document.getElementsByClassName('heading');
-let siteDescArray = [...document.getElementsByClassName('description')];
-let siteImgArray = [...document.getElementsByClassName('site-img')];
-let page = document.querySelector('body');
 
-console.log(page);
+let siteDescArray = [...document.getElementsByClassName('description')];
+let page = document.querySelector('body');
 
 // Shows little title animation about new site
 window.setTimeout(() => {
@@ -12,28 +10,30 @@ window.setTimeout(() => {
   siteTitleHeading[0].id = 'move-up';
 }, 2000);
 
-
-//click anywhere else and the description fades
-// page.addEventListener('click', () => {
-//   for (let elm of siteDescArray){
-//     elm.id = '';
-//   }
-// });
-
-// loops through elements and gives them all a click event
-function addClick(arr) {
-  for (let elm of arr) {
-    elm.addEventListener('click', addClass);
-  };
-};
-
-// Adds opacity to the description div on click
-function addClass(){
-  this.id = 'show-description';
+// Allows for event delegation
+function getEventTarget(e) {
+  e = e || window.event;
+  return e.target || e.srcElement;
 }
 
+// Show description if clicked elm is site-img. Otherwise, hide all descriptions
+function showDesc(e) {
+  let target = getEventTarget(e);
+  if(target.classList.contains('site-img')) {
+    target.previousSibling.previousSibling.id = 'show-description';
+  } else {
+    for (let elm of siteDescArray){
+      elm.id = '';
+    };
+  }
+}
 
+// If the screen size is smaller than a tablet media query on load then we apply click listener
+function tabletViewCheck() {
+  if (this.innerWidth <= 776) page.addEventListener('click', showDesc);
+}
 
-
-// If the screen size is smaller than a tablet media query on load then we
-let tabletView = window.innerWidth <= 776 ? addClick(siteDescArray) : console.log("lol");
+// Fire function each time window is loaded or resized
+['onload','resize'].forEach(event =>
+    window.addEventListener(event, tabletViewCheck())
+);
