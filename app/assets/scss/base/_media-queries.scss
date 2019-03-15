@@ -1,3 +1,5 @@
+// Various screen sizes and breakpoints for UI elements
+
 @mixin mobile {
   @media (max-width: 560px){
     @content;
@@ -19,6 +21,14 @@
 
 @mixin smallScreen {
   @media (max-width: 1180px){
+    @content;
+  }
+}
+
+
+// Helps to disable css hover effect for tablets or smaller
+@mixin hoverAnimation {
+  @media (min-width: 776px){
     @content;
   }
 }

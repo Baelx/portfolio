@@ -449,7 +449,7 @@ nav {
   color: white;
   top: -1px;
   box-shadow: 0px 3px 3px black;
-  z-index: 1; }
+  z-index: 2; }
   nav #visible {
     opacity: 1; }
   nav #move-up {
@@ -619,7 +619,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     text-align: center; }
     @media (max-width: 560px) {
       .portfolio .wrapper {
@@ -653,7 +653,8 @@ main {
         height: 225px;
         opacity: 0;
         transition: .5s ease;
-        border: 1px solid black; }
+        border: 1px solid black;
+        z-index: -1; }
         .portfolio .wrapper .site-wrap .description p {
           padding: 0 0.5em; }
         @media (max-width: 1180px) {
@@ -668,7 +669,7 @@ main {
           .portfolio .wrapper .site-wrap .description {
             width: 400px;
             height: 225px;
-            font-size: 0.65em; } }
+            font-size: 1em; } }
         @media (max-width: 560px) {
           .portfolio .wrapper .site-wrap .description {
             width: 200px;
@@ -682,9 +683,13 @@ main {
         backface-visibility: hidden;
         border-radius: 3px;
         border: 1px solid black; }
-  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
-    opacity: 1; }
-  .portfolio .site-wrap:hover .site-img:hover, .portfolio .site-wrap:active .site-img:active {
-    opacity: 0.3; }
-  .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
-    border: 1px solid white; }
+  @media (min-width: 776px) {
+    .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+      opacity: 1;
+      z-index: 1; }
+    .portfolio .site-wrap:hover .description, .portfolio .site-wrap:active .description {
+      border: 1px solid white; } }
+  .portfolio #show-description {
+    opacity: 1;
+    border: 1px solid white;
+    z-index: 1; }
