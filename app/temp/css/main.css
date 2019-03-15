@@ -619,7 +619,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     text-align: center; }
     @media (max-width: 560px) {
       .portfolio .wrapper {
@@ -669,7 +669,7 @@ main {
           .portfolio .wrapper .site-wrap .description {
             width: 400px;
             height: 225px;
-            font-size: 0.65em; } }
+            font-size: 1em; } }
         @media (max-width: 560px) {
           .portfolio .wrapper .site-wrap .description {
             width: 200px;

@@ -4,13 +4,23 @@ let siteTitleHeading = document.getElementsByClassName('heading');
 let siteDescArray = [...document.getElementsByClassName('description')];
 let page = document.querySelector('body');
 
-// Shows little title animation about new site
-window.setTimeout(() => {
-  newSiteNotice[0].id = 'visible';
-  siteTitleHeading[0].id = 'move-up';
-}, 2000);
+// Fire function each time window is loaded or resized
+['load','resize'].forEach(event =>
+  window.addEventListener(event, () => {
+    tabletViewCheck();
+    titleAnimation();
+  })
+);
 
-// Allows for event delegation
+// Shows little title animation about new site
+function titleAnimation() {
+  this.setTimeout(() => {
+    newSiteNotice[0].id = 'visible';
+    siteTitleHeading[0].id = 'move-up';
+  }, 2000);
+}
+
+// Event delegation pattern
 function getEventTarget(e) {
   e = e || window.event;
   return e.target || e.srcElement;
@@ -32,8 +42,3 @@ function showDesc(e) {
 function tabletViewCheck() {
   if (this.innerWidth <= 776) page.addEventListener('click', showDesc);
 }
-
-// Fire function each time window is loaded or resized
-['onload','resize'].forEach(event =>
-    window.addEventListener(event, tabletViewCheck())
-);

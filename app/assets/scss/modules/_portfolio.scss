@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
     text-align: center;
 
 
@@ -73,7 +73,7 @@
         @include tablet {
           width: 400px;
           height: 225px;
-          font-size: 0.65em;
+          font-size: 1em;
         }
 
         @include mobile {
