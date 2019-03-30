@@ -44,7 +44,7 @@ nav {
       width: 100%;
     }
     float: left;
-    width: 220px;
+    width: 245px;
 
     .heading {
       margin: 0.3em 0 0 0;
@@ -86,6 +86,10 @@ nav {
     margin: 0 1rem;
 
   }
+
+  .lang-link {
+    font-weight: bolder;
+  }
 }
 
 .nav-list {
@@ -100,7 +104,7 @@ nav {
     padding: 0;
   }
 
-  width: 310px;
+  width: 340px;
   display: inline-block;
   float:right;
   list-style-type: none;
