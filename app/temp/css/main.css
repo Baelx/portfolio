@@ -472,7 +472,7 @@ nav {
         margin-right: 10px; } }
   nav .site-title {
     float: left;
-    width: 220px; }
+    width: 245px; }
     @media (max-width: 560px) {
       nav .site-title {
         float: none;
@@ -505,9 +505,11 @@ nav {
     color: white;
     text-decoration: none;
     margin: 0 1rem; }
+  nav .lang-link {
+    font-weight: bolder; }
 
 .nav-list {
-  width: 310px;
+  width: 340px;
   display: inline-block;
   float: right;
   list-style-type: none;

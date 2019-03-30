@@ -14,7 +14,7 @@ let page = document.querySelector('body');
 
 // Shows little title animation about new site
 function titleAnimation() {
-  this.setTimeout(() => {
+  this.setTimeout(() => { // Refers to the window object where it's invoked
     newSiteNotice[0].id = 'visible';
     siteTitleHeading[0].id = 'move-up';
   }, 2000);
